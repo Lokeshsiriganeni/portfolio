@@ -1,0 +1,58 @@
+.portfolio {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container{
+  height:100%;
+  padding:8px;
+  background-size: cover;
+  background-image: linear-gradient(#bfb18a,#c0d6ed);
+}
+
+.add-project-button:hover {
+  background-color: #45a049;
+}
+
+
+.project-lists{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.description{
+  color:black;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+input{
+  width:30%;
+  margin:8px;
+}
+.addBtn{
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+textarea{
+  max-width: 40%;
+}
