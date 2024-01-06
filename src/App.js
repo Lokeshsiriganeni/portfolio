@@ -4,9 +4,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Project from './components/Project'
 import Header from './components/Header'
-import Home from './components/HomeSection'
-import HomeSection from './components/HomeSection';
-
+import AboutSection from './components/AboutSection';
+import Contacts from './components/Contacts'
 function App() {
  const [title, setTitle] = useState('');
  const [description, setDescription] = useState('');
@@ -39,13 +38,12 @@ function App() {
     setImageUrl('');
     setProjectUrl('');
  };
-
  return (
   <>
   <Header/>
-  <HomeSection/>
+  <AboutSection />
     <div className="container">
-      <h1>Build Your Protofolio</h1>
+      <h1>Add project</h1>
       <form onSubmit={handleSubmit} className='formContainer'>
         <label>Project Title:</label>
         <input
@@ -78,16 +76,19 @@ function App() {
           required
         />
 
-        <button type="submit" className = 'addBtn'>Add Project</button>
+        <button type="submit" className = 'addBtn'>Add</button>
       </form>
-      <ul className="project-lists">
+      </div>
+      <ul className="project-lists" id = 'projects'>
         <h1>Projects</h1>
         {projects.map((each)=>(
           <Project eachProject = {each} key = {each.index}/>
-        ))}x
+        ))}
         
       </ul>
-    </div>
+      <Contacts />
+      
+   
     </>
  );
 }

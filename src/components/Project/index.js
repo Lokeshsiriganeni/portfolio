@@ -8,9 +8,11 @@ function Project(props) {
       <div>
     <h2>{title}</h2>
     <p class = 'description'>{description}</p>
-    <a href={projectUrl} target = "_blank">View Project</a>
+    <a href={projectUrl} target = "_blank" className = 'link-style'>View Project</a>
     </div>
-    <img src={imageUrl} className = 'img-styling' alt={title} />
+    <div>   
+       <img src={imageUrl} className = 'img-styling' alt={title} />
+    </div>
   </li>
   );
 }

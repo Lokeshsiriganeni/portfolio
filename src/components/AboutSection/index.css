@@ -1,0 +1,36 @@
+
+.para{
+    color:#FDC435;
+    font-weight: bold;
+
+}
+.paraText{
+    color:black
+}
+.aboutContainer{
+    max-width:40%;
+    @media screen and (max-width:768px) {
+        max-width: 100%;
+    }
+}
+button{
+    margin:5px;
+}
+.projectsBtn{
+    background-color:#FDC435;
+    padding:3px;
+    border-radius:5px;
+    width:70px;
+    color: white;
+    height:40px;
+    border:none 1px;
+}
+.linkedinBtn{
+    background-color:grey;
+    padding:3px;
+    border-radius:5px;
+    width:70px;
+    color: white;
+    height:40px;
+    border:none 1px;
+}

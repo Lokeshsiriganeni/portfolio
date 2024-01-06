@@ -1,45 +1,22 @@
-import {Link} from 'react-router-dom'
 
-import {FiLogOut} from 'react-icons/fi'
-import {AiFillHome} from 'react-icons/ai'
-import {BsBriefcaseFill} from 'react-icons/bs'
+import {useState} from 'react'
 import './index.css'
 
-const Header = props => {
-  const logoutClicked = () => {
-  
-  }
-
+const Header = ({onButtonClick}) => {
   return (
     <nav className="header-style">
-     
        <p>Lokesh Siriganeni</p>
-    
-      <div className="nav-container-lg">
+      <div className="nav-section">
+         <a href = '#about'>About</a> 
+         <a href="#projects">Project</a> 
        
-         <p>About</p>
-      
-         <p>Project</p> 
-       
-        <p className="" onClick={logoutClicked}>
+        <a href = '#contacts'>
           contacts
-        </p>
-      </div>
-
-      <div className="nav-container-sm">
-       
-          <AiFillHome fill="white" className="sm-nav-icon" />
-     
-          <BsBriefcaseFill fill="white" className="sm-nav-icon" />
-    
-        <FiLogOut
-          fill="white"
-          className="sm-nav-icon"
-          onClick={logoutClicked}
-        />
+        </a>
       </div>
     </nav>
   )
 }
+
 
 export default Header

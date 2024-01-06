@@ -8,8 +8,17 @@
     margin-bottom: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
+    
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .img-styling{
-    width:200px;
-    height: 200px;
+    width:180px;
+    height: 180px;
+  }
+  .link-style{
+    color:red;
+   
   }
